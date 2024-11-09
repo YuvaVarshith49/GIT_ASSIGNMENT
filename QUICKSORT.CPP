@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-void swap(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
+void swap(int &k, int &l) {
+    int temp = k;
+    k = l;
+    l = temp;
 }
 
 int partition(int arr[], int low, int high) {
