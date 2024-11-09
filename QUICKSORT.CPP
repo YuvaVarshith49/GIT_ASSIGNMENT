@@ -9,17 +9,17 @@ void swap(int &k, int &l) {
 
 int partition(int arr[], int low, int high) {
     int pivot = arr[high]; // Choosing the last element as the pivot
-    int i = low - 1;       // Index of smaller element
+    int j = low - 1;       // Index of smaller element
 
-    for (int j = low; j < high; j++) {
+    for (int k = low; k < high; k++) {
         if (arr[j] < pivot) {
-            i++;
-            swap(arr[i], arr[j]);
+            j++;
+            swap(arr[j], arr[k]);
         }
     }
 
-    swap(arr[i + 1], arr[high]);
-    return (i + 1); // Returning the partition index
+    swap(arr[j + 1], arr[high]);
+    return (j + 1); // Returning the partition index
 }
 
 void quickSort(int arr[], int low, int high) {
