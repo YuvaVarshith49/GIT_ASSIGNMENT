@@ -12,9 +12,9 @@ void selectionSort(int arr[], int n) {
         }
 
         // Swap the found minimum element with the first element of the unsorted part
-        int temp = arr[minIndex];
+        int t = arr[minIndex];
         arr[minIndex] = arr[i];
-        arr[i] = temp;
+        arr[i] = t;
     }
 }
 
