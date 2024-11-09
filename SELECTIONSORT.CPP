@@ -26,7 +26,7 @@ void printArray(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {64, 34, 25, 12, 20, 11, 90};
+    int arr[] = {64, 34, 25, 12, 20, 11, 90,49};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     cout << "Original array: ";
