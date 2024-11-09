@@ -5,21 +5,21 @@ void merge(int arr[], int left, int mid, int right) {
     int n1 = mid - left + 1;
     int n2 = right - mid;
 
-    int leftarr[n1], rightArray[n2];
+    int leftarr[n1], rightarr[n2];
 
     for (int i = 0; i < n1; i++)
         leftarr[i] = arr[left + i];
     for (int i = 0; i < n2; i++)
-        rightArray[i] = arr[mid + 1 + i];
+        rightarr[i] = arr[mid + 1 + i];
 
     int i = 0, j = 0, k = left;
 
     while (i < n1 && j < n2) {
-        if (leftarr[i] <= rightArray[j]) {
+        if (leftarr[i] <= rightarr[j]) {
             arr[k] = leftarr[i];
             i++;
         } else {
-            arr[k] = rightArray[j];
+            arr[k] = rightarr[j];
             j++;
         }
         k++;
@@ -32,7 +32,7 @@ void merge(int arr[], int left, int mid, int right) {
     }
 
     while (j < n2) {
-        arr[k] = rightArray[j];
+        arr[k] = rightarr[j];
         j++;
         k++;
     }
