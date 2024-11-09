@@ -25,7 +25,7 @@ int main() {
     int arr[] = {64, 34, 25, 10, 22, 11, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Original array: ";
+    cout << "OG array: ";
     printArray(arr, n);
 
     bubbleSort(arr, n);
